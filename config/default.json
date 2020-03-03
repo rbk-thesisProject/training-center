@@ -1,0 +1,6 @@
+{
+  "mongoURI": {
+    "global": "mongodb+srv://esam:1234@cluster0-ir02q.mongodb.net/test?retryWrites=true&w=majority",
+    "local": "mongodb://mongodb0.example.com:27017/test"
+  }
+}
