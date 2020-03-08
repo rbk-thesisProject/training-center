@@ -6,9 +6,10 @@ connectDB();
 
 const app = express();
 app.use(express.json({ extended: false }));
-app.use('/api/teacher');
-app.use('/api/student');
-app.use('/api/admin');
+
+app.use('/api/user', require('./routes/user'));
+app.use('/api/signin', require('./routes/signin'));
+// app.use('/api/user');
 
 app.get('/', (req, res) => {
   res.send('API running');
